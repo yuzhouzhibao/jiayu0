@@ -1,0 +1,193 @@
+/* 设置所有元素的边距和填充为零，使用边框盒模型 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 导入自定义字体 */
+@font-face {
+  font-family: pop;
+  src: url(./fonts/poppins-Medium.ttf);
+}
+
+/* 主要容器样式 */
+.main {
+  width: 100%;
+  height: auto;
+  background-color: rgb(245, 245, 245);
+  font-family: pop;
+  padding: 50px 0;
+  display: grid;
+  place-items: center;
+}
+
+/* 主标题样式 */
+.main .heading {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(106, 6, 236);
+  position: relative;
+  margin-bottom: 80px;
+}
+
+/* 主标题下的横线 */
+.heading::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 3px;
+  left: 50%;
+  bottom: -5px;
+  background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+  transform: translateX(-50%);
+}
+
+
+
+
+/* 直线样式 */
+.container::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: calc(100% + 30px); /* 让直线超出容器一点，以容纳球 */
+  background-image: linear-gradient(to bottom, rgb(106, 6, 236), rgb(220, 0, 240));
+  right: 50%; /* 放置在容器的右侧 */
+  top: -15px; /* 让直线的上面超出容器一点，以容纳球 */
+}
+/* Your existing styles */
+
+
+
+
+
+
+
+/* 容器样式 左标题*/
+.container {
+  width: 70%;
+  height: auto;
+  position: relative;
+}
+
+/* 无序列表样式 */
+.container ul {
+  list-style: none;
+}
+
+/* 列表项样式 */
+.container ul li {
+  width: 50%;
+  height: auto;
+  padding: 30px 50px;
+  background-color: #fff;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.384);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  z-index: 99;
+  position: relative;
+} 
+
+
+
+/* 设置奇数位置列表项内的日期位置 */
+.container ul li:nth-child(even) .date {
+  right: 60%;
+  transform: translateX(-470px);
+}
+
+
+/* 设置偶数位置列表项的浮动和清除 */
+.container ul li:nth-child(even) {
+  float: right;
+  clear: left;
+  transform: translateX(30px);
+}
+
+
+
+.container ul li:nth-child(odd) {
+  float: left;
+  clear: right;
+  transform: translate(-30px);
+  text-align: right;
+  
+  
+}
+
+/* 列表项内标题的样式 */
+.container ul li .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(106, 6, 236);
+}
+
+/* 列表项内段落文本的样式 */
+ul li p {
+  font-size: 15px;
+  color: #444;
+  margin: 7px 0;
+  line-height: 23px;
+}
+
+/* 列表项内超链接样式 */
+ul li a {
+  font-size: 15px;
+  color: rgb(106, 6, 236);
+  text-decoration: none;
+}
+
+/* 日期样式 */
+ul li .date {
+  position: absolute;
+  top: -40px;
+  left: 500px;
+  width: 135px;
+  height: 30px;
+  border-radius: 20px;
+  color: #fff;
+  background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+}
+
+/* 圆圈样式 */
+.container ul li .circle {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(220, 0, 240, 0.403);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 圆圈内小圆点样式 */
+.container ul li .circle::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgb(106, 6, 236);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 设置奇数位置列表项内的圆圈位置 */
+.container ul li:nth-child(odd) .circle {
+  right: -300px;
+  top: -10px;
+  transform: translate(2260%, -50%);
+  
+}
+
+
+/* 设置偶数位置列表项内的圆圈位置 */
+.container ul li:nth-child(even) .circle {
+  left: -30px;
+  transform: translate(-50%, -50%);
+}
