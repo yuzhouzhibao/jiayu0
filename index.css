@@ -69,6 +69,7 @@
   width: 70%;
   height: auto;
   position: relative;
+  margin-top: 80px; /* 通过修改这个值来调整上边距 */
 }
 
 /* 无序列表样式 */
@@ -96,6 +97,13 @@
   right: 60%;
   transform: translateX(-470px);
 }
+/* 设置奇数位置列表项内的日期位置 */
+.container ul li:nth-child(Odd) .date {
+  left: 100%; /* 通过调整这个值来改变圆圈距离右侧的位置 */
+  
+  transform: translate(-120%, -50%);
+}
+  
 
 
 /* 设置偶数位置列表项的浮动和清除 */
@@ -104,7 +112,6 @@
   clear: left;
   transform: translateX(30px);
 }
-
 
 
 .container ul li:nth-child(odd) {
@@ -177,17 +184,18 @@ ul li .date {
   transform: translate(-50%, -50%);
 }
 
-/* 设置奇数位置列表项内的圆圈位置 */
-.container ul li:nth-child(odd) .circle {
-  right: -300px;
-  top: -10px;
-  transform: translate(2260%, -50%);
-  
-}
+
 
 
 /* 设置偶数位置列表项内的圆圈位置 */
 .container ul li:nth-child(even) .circle {
   left: -30px;
   transform: translate(-50%, -50%);
+}
+
+/* 设置奇数位置列表项内的圆圈位置 */
+.container ul li:nth-child(odd) .circle {
+  left: 100%; /* 通过调整这个值来改变圆圈距离右侧的位置 */
+  
+  transform: translate(50%, -50%);
 }
