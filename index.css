@@ -101,7 +101,7 @@
 .container ul li:nth-child(Odd) .date {
   left: 100%; /* 通过调整这个值来改变圆圈距离右侧的位置 */
   
-  transform: translate(-120%, -50%);
+  transform: translate(-120%, -20%);
 }
   
 
