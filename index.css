@@ -292,13 +292,8 @@ ul li .date {
   
   
 }
-.text1 {
-  position: absolute; 
-  font-size: 24px;
-  padding: 0 20px;
-  margin-left: -130px;
-  margin-top:-480px;
-} 
+
+
 .text p {
   position: absolute;
   margin-top: 20px; /* 调整描述文本顶部的外边距 */
