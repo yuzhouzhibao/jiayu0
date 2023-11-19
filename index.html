@@ -19,18 +19,26 @@
   <div class="reveal">
     <div class="slides">
       <section>
-        <h1>Slide 1</h1>
+        <div class="reveal-hide">
+          <div class="image">
+            <img src="c:\Users\jiaxu\Desktop\u4.10.jpg" alt="Image">
+          </div>
+          <div class="text">
+            <h1>Title</h1>
+            <p>Description goes here.</p>
+          </div>
+        </div>
       </section>
       <section>
         <h1>Slide 2</h1>
       </section>
     </div>
       <!-- your slides content -->
-      <div class="close-btn" id="ClosePresentation">&#10006;</div>
+  
     
   </div>
 
-  
+  <div class="close-btn" id="ClosePresentation">&#10006;</div>
   
   <div class="main">
   
@@ -195,6 +203,7 @@
         Reveal.configure({ overview: false });
         document.querySelector('.reveal').removeAttribute('tabindex');
         document.body.focus();
+        document.body.style.overflow = 'auto';
       }
 
       document.addEventListener('keydown', function(event) {
@@ -211,6 +220,10 @@
   </script>
   
 
+</body>
+
+
+</html>
 </body>
 
 
