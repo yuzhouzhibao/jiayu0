@@ -268,4 +268,21 @@ ul li .date {
   font-size: 24px;
   cursor: pointer;
   display: none;
+
+  font-size: 38px; /* 改变字体大小 */
+  color: white; /* 改变颜色 */
+    /* 其他样式属性 */
+}
+.reveal-hide {
+  display: flex;
+  align-items: center;
+}
+.image {
+  padding: 0 20px;
+  margin-left: -50px;
+}
+.text {
+  
+  padding: 0 20px;
+  margin-left: 500px;
 }
