@@ -297,6 +297,5 @@ ul li .date {
   margin-left: 8px;
   white-space: normal;
   text-align: left;
-  line-height: 2;
-  color: black; /* 设置描述文本的颜色 */
+  line-height: 2; /* 设置描述文本的颜色 */
 }
