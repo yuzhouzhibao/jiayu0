@@ -273,16 +273,30 @@ ul li .date {
   color: white; /* 改变颜色 */
     /* 其他样式属性 */
 }
-.reveal-hide {
-  display: flex;
-  align-items: center;
-}
-.image {
+.text h1 {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 16px;
   padding: 0 20px;
-  margin-left: -50px;
-}
-.text {
+  margin-left: 520px;
+  margin-top: -400px;
   
+}
+
+.text1 {
+  position: absolute;
+  font-size: 24px;
   padding: 0 20px;
-  margin-left: 500px;
+  margin-left: -130px;
+  margin-top: -480px;
+}
+
+.text p {
+  position: absolute;
+  margin-top: 20px; /* 调整描述文本顶部的外边距 */
+  margin-left: 8px;
+  white-space: normal;
+  text-align: left;
+  line-height: 2;
+  color: black; /* 设置描述文本的颜色 */
 }
