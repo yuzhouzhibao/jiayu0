@@ -1,4 +1,4 @@
-/* 设置所有元素的边距和填充为零，使用边框盒模型a */
+/* 设置所有元素的边距和填充为零，使用边框盒模型 */
 * {
   margin: 0;
   padding: 0;
@@ -198,4 +198,74 @@ ul li .date {
   left: 100%; /* 通过调整这个值来改变圆圈距离右侧的位置 */
   
   transform: translate(50%, -50%);
+}
+/* styles.css */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  overflow: auto;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: center;
+  padding: 20px; /* 调整内容的内边距 */
+}
+
+#presentationButton {
+  background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#Presentar {
+  background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: px;
+  cursor: pointer;
+  width: 130px; /* 设置按钮宽度与日期宽度相同 */
+  height: 40px;
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
 }
