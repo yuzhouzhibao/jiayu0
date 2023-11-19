@@ -1,4 +1,4 @@
-/* q设置所有元素的边距和填充为零，使用边框盒模型 */
+/* 设置所有元素的边距和填充为零，使用边框盒模型 */
 * {
   margin: 0;
   padding: 0;
@@ -273,29 +273,49 @@ ul li .date {
   color: white; /* 改变颜色 */
     /* 其他样式属性 */
 }
-.text h1 {
-  position: absolute;
+
+.image {
+  position: relative; 
+  padding: 0 20px;
+  margin-left: -140px;
+  margin-top: 30px;
+  width: 70%; /* 设置图片宽度为其容器的100% */
+  height: 70%; /* 让高度自动调整，保持比例 */
+}
+.text {
+  position: absolute; 
   white-space: nowrap;
   font-size: 16px;
   padding: 0 20px;
   margin-left: 520px;
   margin-top: -400px;
   
+  
 }
-
 .text1 {
-  position: absolute;
+  position: absolute; 
   font-size: 24px;
   padding: 0 20px;
   margin-left: -130px;
-  margin-top: -480px;
-}
-
+  margin-top:-480px;
+} 
 .text p {
   position: absolute;
   margin-top: 20px; /* 调整描述文本顶部的外边距 */
   margin-left: 8px;
   white-space: normal;
   text-align: left;
-  line-height: 2; /* 设置描述文本的颜色 */
+  line-height: 2;
+  
+  
 }
+
+
+
+
+
+
+
+
+
+
